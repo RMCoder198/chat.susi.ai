@@ -1,16 +1,43 @@
+#subheading {
+    font-size: 24px;
+    font-weight: 100;
+    margin: 20px auto;
+    max-width: 880px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.table {
+  position: relative;
+  left: 15%;
+  margin-top: 30px;
+  width: 434px;
+}
+
+.twitterIcon{
+  right: 5px;
+}
+
 .tabStyle{
-  height: 500px;
+  height: auto;
   margin-top: 20px;
   display: inline-block;
 }
 
-.settings-container{
+.settings-container-light{
   width: 100%;
   height: 100vh;
-    background:  rgb(242, 242, 242);
+  background: rgb(242, 242, 242);
+}
+
+.settings-container-dark{
+  width: 100%;
+  height: 100vh;
+  background: rgb(0,0,18);
 }
 
 .settings-list{
+    margin-bottom: 145px;
     padding: 0px 0px;
     user-select: none;
     width: 100%;
@@ -36,23 +63,59 @@
 }
 
 .settingsBtns {
-  top: 10px;
-  margin-left: 30px ;
+  top: 5px;
+  margin-left: 20px ;
+}
+
+.settingsComponents{
+    width: 75%;
+    margin-top: 80px;
+}
+
+.image-div{
+    margin-top:-40px;	
+}
+
+.colorPicker{
+    margin-left: 50px;
+    margin-top: -35px;
+}
+
+.colorPicker>div>div {
+    width: 90px !important; /* csslint allow: known-properties, important */
+}
+
+.color-box{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 3px;
+    border: 1px solid #0000006e;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: -8px;
 }
 
 .settings-toggle {
-  padding: 20px;
-  max-width: 60%;
+  max-width: 5%;
+  float: right;
 }
 
 .settingsSubmit{
       text-align: left ;
       margin-left: 30px;
+      margin-bottom: 16px;
 }
 
 .setting-item{
-  width: 97%;
+  width: 100%;
 }
+
+.Link a {
+  color : #1DA1F5;
+  text-decoration : none;
+}
+
 .settingMenu {
 
     max-width: none;
@@ -60,7 +123,6 @@
     position: relative;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -79,6 +141,8 @@
 .leftMenu {
   width: 35%;
   background-color: #fff;
+  height: 500px;
+  overflow: hidden;
 }
 
 .rightMenu {
@@ -86,12 +150,20 @@
   background-color: #fff;
 }
 
-.break-line{
+.break-line-light{
   margin: 0px ;
   width: 100% ;
   height: 1px ;
   border: 0 none ;
   background-color : rgb(242, 242, 242) ;
+}
+
+.break-line-dark{
+  margin: 0px ;
+  width: 100% ;
+  height: 1px ;
+  border: 0 none ;
+  background-color : white ;
 }
 
 .right-chevron{
@@ -100,8 +172,12 @@
   right: 10px;
 }
 
+.email-field:hover{
+    cursor: not-allowed;
+}
 
-@media only screen and (max-width: 1000px){
+
+@media only screen and (max-width: 1060px){
   .settings-list-dropdown{
     display: inline-block;
   }
@@ -116,17 +192,25 @@
 
   .leftMenu {
     width: 100%;
+    height: auto;
   }
 
   .tabStyle{
-  height: auto;
-}
+    height: auto;
+  }
 
   .rightMenu {
+    height: auto;
     width: 100%;
   }
 
   .setting-item{
   width: 100%;
 }
+}
+
+@media screen and (max-width: 500px) {
+  .reduceSettingDiv {
+    width: 70%;
+  }
 }

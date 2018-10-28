@@ -10,6 +10,7 @@
 /build
 
 # misc
+.idea
 .DS_Store
 .env
 npm-debug.log*
@@ -18,3 +19,5 @@ yarn-debug.log*
 yarn-error.log*
 jest
 ..env.swp
+package-lock.json
+.vscode/

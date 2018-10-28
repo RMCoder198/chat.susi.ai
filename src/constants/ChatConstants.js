@@ -1,7 +1,6 @@
 import keyMirror from 'keymirror';
 
 export default {
-
   ActionTypes: keyMirror({
     CLICK_THREAD: null,
     CREATE_MESSAGE: null,
@@ -12,12 +11,12 @@ export default {
     STORE_HISTORY_MESSAGE: null,
     SERVER_CHANGED: null,
     INIT_SETTINGS: null,
+    INIT_IDENTITY: null,
     INIT_TTS_VOICES: null,
     SETTINGS_CHANGED: null,
     RESET_MESSAGE_VOICE: null,
     FEEDBACK_RECEIVED: null,
-    CHANGE_CUSTOM_THEME:null,
-    INIT_THEME_CUSTOM_THEME:null,
-  })
-
+    CHANGE_CUSTOM_THEME: null,
+    INIT_THEME_CUSTOM_THEME: null,
+  }),
 };
